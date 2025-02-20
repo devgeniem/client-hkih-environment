@@ -1,0 +1,69 @@
+version: "3.8"
+
+services:
+  dev:
+    extends: app.base
+    build:
+      context: .
+      args:
+        SERVICE_NAME: app-local
+      target: dev
+      # secrets:
+      #  - composer_auth
+    environment:
+      DB_HOST: db
+      WP_REDIS_HOST: redis
+      PROXY_URL: localhost:8080
+    ports:
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
+    profiles:
+      - dev
+
+  app:
+    extends: app.base
+    environment:
+      DB_HOST: db
+      WP_REDIS_HOST: redis
+    depends_on:
+      - db
+      - redis
+    profiles:
+      - app
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+    volumes:
+      - var-lib-mysql:/var/lib/mysql
+
+  redis:
+    image: redis:7
+
+  app.base:
+    build:
+      target: app
+    env_file: .env.app
+    environment:
+      PORT: "8080"
+      K_SERVICE: dev
+      K_REVISION: dev-00001
+      K_CONFIGURATION: dev
+    ports:
+      - 8080:8080
+    privileged: true
+    init: true
+    volumes:
+      - config:/root/.config
+    profiles:
+      - app.base
+
+volumes:
+  var-lib-mysql:
+  config:
