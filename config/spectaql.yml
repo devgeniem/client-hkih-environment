@@ -17,9 +17,9 @@ servers:
   - url: https://liikunta.content.api.hel.fi/graphql
     description: Production
     production: true
-  - url: https://client-hkih.test/graphql
+  - url: http://localhost:8080/graphql
     description: Local Development
     production: false
-  - url: https://hkih.stage.geniem.io/graphql
+  - url: https://liikunta.app-staging.hkih.hion.dev/graphql
     description: Staging server
     production: false

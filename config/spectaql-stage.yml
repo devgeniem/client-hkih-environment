@@ -4,7 +4,7 @@ info:
   x-hidePoweredBy: true
 
 introspection:
-  url: https://liikunta.hkih.stage.geniem.io/graphql
+  url: https://liikunta.app-staging.hkih.hion.dev/graphql
 
 extensions:
   # Utilize the 'graphql-scalars' library when generating examples for scalars it supports that
@@ -14,12 +14,12 @@ extensions:
   graphqlScalarExamples: true
 
 servers:
-  - url: https://liikunta.hkih.stage.geniem.io/graphql
+  - url: https://http://liikunta.content.api.hel.fi/
     description: Production
     production: true
-  - url: https://client-hkih.test/graphql
+  - url: http://localhost:8080/graphql
     description: Local Development
     production: false
-  - url: https://hkih.stage.geniem.io/graphql
+  - url: https://liikunta.app-staging.hkih.hion.dev/graphql
     description: Staging server
     production: false
