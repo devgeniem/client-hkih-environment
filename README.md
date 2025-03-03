@@ -18,10 +18,10 @@
 
 ```
 # Clone project
-git clone git@github.com:City-of-Helsinki/headless-cms.git
+git clone https://github.com/devgeniem/client-hkih-environment
 
 # Create env-file.
-copy .env.example and rename it to .env.app
+cp .env.example .env.app
 
 # Build and start containers
 docker compose build dev
@@ -39,7 +39,7 @@ npm install
 npm run build
 
 # Create database
-docker compose exec db mysqladmin create staging
+docker compose exec db mysqladmin create wordpress
 
 docker compose exec dev sh
 # ... then, in dev shell run
