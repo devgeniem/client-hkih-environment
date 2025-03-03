@@ -1174,16 +1174,16 @@
         },
         {
             "name": "devgeniem/hkih-linkedevents",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devgeniem/hkih-linkedevents.git",
-                "reference": "671712a53f78f5abde63d5a2ab191ab0968eb44f"
+                "reference": "e8e3f333bde3ee39323c52f8669caef6f1281030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devgeniem/hkih-linkedevents/zipball/671712a53f78f5abde63d5a2ab191ab0968eb44f",
-                "reference": "671712a53f78f5abde63d5a2ab191ab0968eb44f",
+                "url": "https://api.github.com/repos/devgeniem/hkih-linkedevents/zipball/e8e3f333bde3ee39323c52f8669caef6f1281030",
+                "reference": "e8e3f333bde3ee39323c52f8669caef6f1281030",
                 "shasum": ""
             },
             "require": {
@@ -1217,9 +1217,9 @@
             ],
             "support": {
                 "issues": "https://github.com/devgeniem/hkih-linkedevents/issues",
-                "source": "https://github.com/devgeniem/hkih-linkedevents/tree/1.0.0"
+                "source": "https://github.com/devgeniem/hkih-linkedevents/tree/1.0.1"
             },
-            "time": "2025-02-11T11:06:09+00:00"
+            "time": "2025-03-03T10:13:08+00:00"
         },
         {
             "name": "devgeniem/hkih-sportslocations",
