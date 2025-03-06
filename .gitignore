@@ -60,3 +60,6 @@ web/app/languages/*
 ##
 web/app/db-error.php
 web/app/install.php
+
+# Node.js and npm
+node_modules
