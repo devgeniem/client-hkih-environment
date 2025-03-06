@@ -46,10 +46,10 @@ docker compose exec dev sh
 wp core multisite-install --url=http://localhost:8080 --title=xyz --admin_user=root --admin_password=root --admin_email=first.lastname@test.com --skip-email
 
 # Verify the site works by login into admin
-open http://localhost.test:8080/wp-login.php
+open http://localhost:8080/wp-login.php
 
 # Verify the site works by visiting the site
-open http://localhost.test:8080/wp-login.php
+open http://localhost:8080/wp-login.php
 
 # The project requires the following plugins to work, which must be purchased separately as it does not come with the project.
 - https://www.advancedcustomfields.com/
