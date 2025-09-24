@@ -789,16 +789,16 @@
         },
         {
             "name": "devgeniem/acf-codifier",
-            "version": "1.40.0",
+            "version": "1.41.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devgeniem/acf-codifier.git",
-                "reference": "67564c673fc0977efd5eb44dd0e19c8096d3b493"
+                "reference": "2fc21a33deea76771208cdd6c63acef82ac1e478"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devgeniem/acf-codifier/zipball/67564c673fc0977efd5eb44dd0e19c8096d3b493",
-                "reference": "67564c673fc0977efd5eb44dd0e19c8096d3b493",
+                "url": "https://api.github.com/repos/devgeniem/acf-codifier/zipball/2fc21a33deea76771208cdd6c63acef82ac1e478",
+                "reference": "2fc21a33deea76771208cdd6c63acef82ac1e478",
                 "shasum": ""
             },
             "require": {
@@ -835,9 +835,9 @@
             ],
             "support": {
                 "issues": "https://github.com/devgeniem/acf-codifier/issues",
-                "source": "https://github.com/devgeniem/acf-codifier/tree/1.40.0"
+                "source": "https://github.com/devgeniem/acf-codifier/tree/1.41.4"
             },
-            "time": "2024-04-19T07:49:12+00:00"
+            "time": "2025-04-23T13:32:27+00:00"
         },
         {
             "name": "devgeniem/better-wp-db-error",
@@ -8619,6 +8619,6 @@
     "platform": {
         "php": ">=8.1"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
